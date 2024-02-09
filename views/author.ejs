@@ -1,1 +1,197 @@
-<div>HELLO WORLD YOU ARE IN AUTHORS!</div>
+
+        <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="/main.css">
+        <title>Portfolio</title>
+    </head>
+    
+    <body>
+        <div class="frame"> <!--  katta ekran  -->
+            <div class="main_frame"> <!-- bu 3 ta blok -->
+                <div class="left_frame"> 
+                    <!-- marginlarniham hisobga olib 11 ta qismga ega bolyabti -->
+                    <div class="left_1"> 
+                        <div class="left_1-1">
+                            <img 
+                            src="images/profile.png"
+                            width="156px" 
+                            height="142px"
+                            alt=""
+                            />
+                        </div>
+                        <div class="left_1-2"><%= user.name%></div>
+                        <div class="left_1-3"><%= user.profession%></div>
+                        <div class = "left-icons">
+                        <a class="link_href" href="">
+                            <div class="icon"> 
+                                <img src="icon/linkeding.svg"   class="icon-1" />
+                            </div>
+                        </a>
+                        
+                        <a class="link_href" href="">
+                            <div class="icon"> 
+                                <img src="icon/vector.svg" class="icon-1" />
+                            </div>
+                        </a>
+                        
+                        <a class="link_href" href="">
+                            <div class="icon"> 
+                                <img src="icon/Twitter.svg"  class="icon-1" />
+                            </div>
+                        </a>
+                        
+                        <a class="link_href" href="">
+                            <div class="icon"> 
+                                <img src="icon/Instagram.svg"   class="icon-1" />
+                            </div>
+                        </a>
+                        
+                        <a class="link_href" href="">
+                            <div class="icon"> 
+                                <img src="icon/Youtube.svg"  class="icon-1" />
+                            </div>
+                        </a>
+
+                        <a class="link_href" href="">
+                            <div class="icon"> 
+                                <img src="icon/Facebook.svg"  class="icon-1" />
+                            </div>
+                        </a>
+                    </div>
+                    </div>
+
+                    <div class="marginer"></div>
+                   <!--                    2 box                  -->
+
+                   <div class="l_box box_02" > 
+                    <div class="keys" ><span> Age: </span></div>
+                    <div class="keys" ><span> Residence: </span></div>
+                    <div class="keys" ><span> Freelande: </span></div>
+                    <div class="keys" ><span> Address :</span></div>
+            
+                    <div class="value" >
+                        <div class="value_01" ><%=user.age%></div>
+                        <div class="value_02" ><%=user.residence%></div>
+                        <div class="value_03" ><%=user.freelance%></div>
+                        <div class="value_04" ><%=user.adress%></div>
+                        <div class="marginer"></div>
+                    </div>
+                    
+            
+                </div>
+                        
+                        
+                        
+                 <!-- box 3 qismini ochildi -->
+                      
+                 <div class="l_box box_03" >
+                    <p>Language</p>
+                    <div><%=user.languages[0]%></div> 
+                    <div><%=user.languages[1]%></div>
+                    <div><%=user.languages[2]%></div>
+                </div>
+                <div class="level" >
+                    <div>100%</div>
+                    <img src="/author/line100.png" alt="">
+                    <div>80%</div>
+                    <!-- <img src="/author/line80.png" alt=""> -->
+                    <div>70%</div>
+                   <!-- <img src="/author/line65.png" alt=""> -->
+
+            
+                </div>
+                       
+               
+                <div class="marginer_4"></div>
+                           <!-- box 4 qism   -->
+                          <!-- box 4 qism   -->
+                            <!-- box 4 qism   -->
+                              <!-- box 4 qism   -->
+                      
+
+                              <div class="l_box box_04" >
+                                <p>Skills</p>
+                                <div><%=user.skills[0]%></div>
+
+                                <div><%=user.skills[1]%></div>
+                                <div><%=user.skills[2]%></div>
+                                <div><%=user.skills[3]%></div>
+                                <div><%=user.skills[4]%></div>
+                                </div>
+                                <div class="level_4">
+                                    <div>90%</div>
+                                    <!-- <img src="/author/html90%.png" alt=""> -->
+                                    <div>85%</div>
+                                    <!-- <img src="/author/line80.png" alt=""> -->
+                                    <div>80%</div>
+                                    <!-- <img src="/author/line80.png" alt=""> -->
+                                    <div>75%</div>
+                                    <!-- <img src="/author/php70.png" alt=""> -->
+                                    <div>85%</div>
+                                    <!-- <img src="/author/wordpress85%.png" alt=""> -->
+                                </div>
+                             </div>
+
+                            <!-- box 5 qism -->
+                                                    
+<!-- box 5 qism -->                            <!-- box 5 qism -->
+
+                                                        
+                         
+                 <div class="margener_5" ></div>
+                              <div class="l_box box_05">
+                        
+                            <div class="extraskills">
+                                <div><img src="/icons/Icons.png" alt=""><%=user.extra_skills[0]%></div>
+                                <div><img src="/icons/Icons.png" alt=""><%=user.extra_skills[1]%></div>
+                                <div><img src="/icons/Icons.png" alt=""><%=user.extra_skills[2]%></div>
+                                <div><img src="/icons/Icons.png" alt=""><%=user.extra_skills[3]%></div>
+                                       
+                            </div>
+
+                           
+
+                        
+
+
+                                </div>
+
+                              </div>
+               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                          <!--mid frame   -->
+
+                      <div class="mid-frame">
+                    
+
+                        </div>
+
+                    
+
+
+        </div>
+
+        </body>
+            
+            
+            
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+            </html> 
