@@ -1,155 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap");
 
-.frame { 
-width: 100%;
-height: 100%;
-position: relative;
-display:flex;
-flex-direction: row;
-justify-content: center;
-background: hsl(0, 0%, 59%);
+body {
+  background-color: rgb(215, 211, 211);
+}
+.parent {
+  width: 1440px;
+  height: 100%;
+  position: relative;
 }
 
-.frame .main_frame {
-position: relative;
-width: 1440px;
-height: 1312px;
-display: flex;
-flex-direction: row;
-align-items: center;
-margin-top: 2px;
-background: hsl(0, 0%, 56%);
+.left_box {
+  width: 305px;
+  height: 1315px;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  background: rgb(255, 255, 255);
+  border-radius: 5px;
 }
 
- .main_frame .left_frame {
-    position: relative;
-    width: 305px;
-    height: 1315px;
-    background-color: rgb(255, 255, 255);
- }
-
-
- .main_frame  .midd_frame {  
-    position: relative;
-    width: 970px; 
-    height: 1259px; 
-    margin-left: 30px; 
-    margin-right: 27px; 
-    display: flex;
-    flex-direction: column;
- }
-    
-.main_frame .right_frame {
-    position: relative;
-    width: 108px; 
-    height: 1315px; 
-    background-color:white;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-}
-
-
-.main_frame .mid_frame {
-    position: relative;
-    width: 970px;
-    height: 1259px;
-    margin-left: 30px;
-    margin-right: 27px;
-    display: flex;
-    flex-direction: column;
-   
-}
-
-.main_frame .right_frame {
-position: relative;
-width: 108px;
-height: 1315px;
-background-color: aliceblue;
-display: flex;
-flex-direction: column;
-align-items: center;
-
-}
-
-.main_frame .left_frame .left_1 {
-position: relative;
-width: 228px;
-height: 267px;
-margin-top: 50px;
-margin-left: 37px;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-/* /* background-color: aqua;  */
-
-} 
-
-.main_frame .left_frame .left_1-1 {
-display: flex;
-flex-direction: column;
-position: relative;
-width: 156.16px;
-height: 142.53px;
-margin-bottom: 29.46px; 
-
-}
-   
-
- 
-
-
-
-
-  .main_frame .marginer {
-   position: relative;
-   width: 220px;
-   height: 0px;
-   margin-left: 40px;
-   margin-bottom: 25px;
-   margin-top: 39px;
-    
-    /*Background*/
-    border: 1.5px solid rgb(168, 168, 168)
-    
-    }
-
-  
-
-
-
-.main_frame .left_frame .left_1-2 {
-position: relative;
-width: 66.63px;
-height: 20.9px;
-margin-bottom: 6.65px;
-/* /* H4- 18px  */
-font-family: sans-serif;
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 123.6%;
-/* /* or 22px  */
-display: flex;
-justify-content: center;
-align-content: center;
-text-transform: capitalize;
-/*  Black  */
-
-color: #2b2b2b;
-
-} 
-
-
-.main_frame .left_frame .box_02 span{
+.middle_box {
+  width: 971px;
+  height: 463px;
+  position: absolute;
+  top: 10px;
+  left: 340px;
   background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+}
+
+.right_box {
+  width: 108px;
+  height: 1315px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+}
+
+.left_box h1 {
+  font-size: 22px;
+  font-family: Inter;
+  font-weight: 700;
+}
+
+.left_box h2 {
+  font-size: 20px;
+  font-family: Inter;
+  font-weight: 400;
+  opacity: 80%;
+}
+
+.left_box span {
+  background-color: orange;
   font-weight: 500;
-  }
-  
-  .keys{
-     margin: 10px;
-     margin-left: 40px;
-  }
+}
+
+.keys {
+  margin: 10px;
+  margin-left: 40px;
+}
 
 .value {
   position: relative;
@@ -160,17 +71,53 @@ color: #2b2b2b;
   font-weight: 500;
 }
 
-.value div{
+.value div {
   margin: 10px;
-  }
+}
 
-/* box 3  */
+.left_box .box_01 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
-.box_03{
+.box_01 img {
+  margin-top: 47px;
+}
+.user_icons img {
+  margin: 5px;
+}
+
+.box_01 .margener {
+  position: absolute;
+  width: 220px;
+  height: 0;
+  left: 47px;
+  top: 303.25px;
+  border: 1.5px solid rgb(168, 168, 168);
+}
+/*                left box 2           */
+.box_02 .margener {
+  position: absolute;
+  width: 220px;
+  height: 0;
+  left: 47px;
+  top: 153.25px;
+  border: 1.5px solid rgb(168, 168, 168);
+}
+
+.box_02 {
+  position: relative;
+  top: 40px;
+}
+/*                left box 3           */
+
+.box_03 {
   position: relative;
   top: -60px;
 }
-.box_03 p{
+.box_03 p {
   font-size: 22px;
   margin-left: 40px;
   font-weight: 500;
@@ -178,12 +125,15 @@ color: #2b2b2b;
 
 .box_03 div {
   margin-left: 40px;
-margin-top: 20px;
-color: rgba(118, 118, 118, 1.00);
-
+  margin-top: 20px;
+  color: rgba(118, 118, 118, 1);
 }
-
-
+.icon100 {
+  position: relative;
+  color: red;
+  z-index: 999;
+  font-size: 100px;
+}
 .level {
   margin-left: 40px;
   margin-top: 10px;
@@ -191,226 +141,244 @@ color: rgba(118, 118, 118, 1.00);
   top: -190px;
   left: 200px;
 }
-.level div{
-margin-top: 20px;
-color: rgba(118, 118, 118, 1.00);
-
+.level div {
+  margin-top: 20px;
+  color: rgba(118, 118, 118, 1);
 }
 
+.margener_4 {
+  position: relative;
+  width: 220px;
+  height: 0;
+  left: 47px;
+  top: -170px;
+  border: 1.5px solid rgb(168, 168, 168);
+}
 
-
-
-
-
-      .marginer_4 {
-        position: relative;
-        width: 220px;
-        height: 0;
-        left: 47px;
-        top: -170px;
-        border: 1.5px solid rgb(168, 168, 168);
-
-      }
-
-
-
-                                   /* box 4 qism */
- .main_frame .left_frame .box_04 p{
+.box_04 p {
   font-size: 22px;
   margin-left: 40px;
   font-weight: 500;
   position: relative;
-top: -160px;
+  top: -160px;
 }
 
 .box_04 div {
   margin-left: 40px;
-margin-top: 20px;
-position: relative;
-top: -160px;
-color: rgba(118, 118, 118, 1.00);
-
+  margin-top: 20px;
+  position: relative;
+  top: -160px;
+  color: rgba(118, 118, 118, 1);
 }
 
-.level_4 div{
+.level_4 div {
   margin-left: 40px;
   margin-top: 20px;
   position: relative;
   top: -380px;
   left: 200px;
-  color: rgba(118, 118, 118, 1.00);
+  color: rgba(118, 118, 118, 1);
 }
 
-
-           /* box 5 qism goooooooooo */
- 
-           .main_frame .left_frame .box_04 p{
-            font-size: 22px;
-            margin-left: 40px;
-            font-weight: 500;
-            position: relative;
-          top: -160px;
-          }
-
- 
-          .margener_5{
-            position: relative;
-            width: 220px;
-            height: 0;
-            left: 47px;
-            top: -370px;
-            border: 1.5px solid rgb(168, 168, 168);
-            }
-      
-            .box_05 p{
-               font-size: 22px;
-               margin-left: 40px;
-               font-weight: 500;
-               position: relative;
-            top: -360px;
-            }
-            .extraskills{
-                  margin-left: 40px;
-               margin-top: 20px;
-               position: relative;
-               top: -360px;
-            }
-      
-            .extraskills div{
-            margin-top: 20px;
-            color: rgba(118, 118, 118, 1.00);
-         }
-
-
-
-
-
-  
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* leo aka */
-
-.left_1-3 {
-position: relative;
-width: 147.84px;
-height: 25.65px;
-display: flex;
-justify-content: center;
-align-items: center;
-
-/* Paragraph Progress -15 */
-font-family: sans-serif;
-font-style: normal;
-font-weight: normal;
-font-size: 15px;
-line-height: 24px;
-/* 0r 160px */
-text-transform: capitalize;
-font-feature-settings: 'calt' off, 'kern' off;
-/* Paragraph font */
-
- color: #767676;
+.margener_5 {
+  position: relative;
+  width: 220px;
+  height: 0;
+  left: 47px;
+  top: -370px;
+  border: 1.5px solid rgb(168, 168, 168);
 }
 
-.left-icons {
-position: relative;
-display: flex;
-align-items: center ;
-justify-content: space-between;
-flex-direction: row;
-width: 238px;
-margin-top: 19px;
-
+.box_05 p {
+  font-size: 22px;
+  margin-left: 40px;
+  font-weight: 500;
+  position: relative;
+  top: -360px;
+}
+.extraskills {
+  margin-left: 40px;
+  margin-top: 20px;
+  position: relative;
+  top: -360px;
 }
 
-
-
-
-
-.link_href {
-text-decoration: none;
-color: black;
-
+.extraskills div {
+  margin-top: 20px;
+  color: rgba(118, 118, 118, 1);
+}
+.i100 {
+  position: absolute;
+  top: 595px;
+  left: 65px;
 }
 
-.icon .icon-1 {
-position: relative;
-width: 24.99px;
-height: 22.8px;
-left: 29.17%;
-right: 27.08%;
-border-radius: 50%;
-margin-top: 5.86px;
-filter: drop-shadow(0 4px 4px rgba(0,0,0,.25));
-/* Yellow */
-
-background: #FFB400;
-
+.i80 {
+  position: absolute;
+  top: 638px;
+  left: 65px;
 }
 
+.i60 {
+  position: absolute;
+  top: 680px;
+  left: 65px;
+}
+.i90 {
+  position: absolute;
+  top: 793px;
+  left: 65px;
+}
 
-    
+.i85 {
+  position: absolute;
+  top: 839px;
+  left: 65px;
+}
+.i80_2 {
+  position: absolute;
+  top: 881px;
+  left: 65px;
+}
+
+.i75 {
+  position: absolute;
+  top: 925px;
+  left: 65px;
+}
+.i85_2 {
+  position: absolute;
+  top: 965px;
+  left: 65px;
+}
+
+/*                   middle box                    */
+/*                   middle box                    */
+/*                   middle box                    */
+/*                   middle box                    */
+/*                   middle box                    */
+
+.middle_text01 {
+  font-size: 40px;
+  width: 350px;
+  margin-left: 56px;
+  margin-top: 90px;
+  font-weight: 550;
+}
+
+.middle_text02 {
+  font-size: 16px;
+  text-align: left;
+  margin-left: 61px;
+  margin-top: 17px;
+  width: 424px;
+  color: rgb(145, 145, 145);
+}
+
+.middel_btn {
+  width: 154px;
+  height: 49px;
+  background-color: orange;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  margin-left: 51px;
+  margin-top: 22px;
+  cursor: pointer;
+}
+
+.middle_box img {
+  width: 371px;
+  height: 463.09px;
+  top: -3px;
+  right: 61px;
+  position: absolute;
+}
+
+/*                   right box                */
+.r_b_icon {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.r_b_icons {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 170px;
+}
+
+abbr {
+  font-size: 20px;
+  cursor: pointer;
+}
+.m_b_test {
+  width: 400px;
+  height: 150px;
+  position: relative;
+  top: 500px;
+  left: 600px;
+}
+
+.m_b_test01 {
+  width: 193px;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-left: 100px;
+}
+
+.m_b_test02 {
+  width: 418px;
+  height: 68px;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.m_b_box {
+  width: 971px;
+  height: 463px;
+  position: absolute;
+  top: 700px;
+  left: 330px;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.mbb {
+  width: 300px;
+  height: 225px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  margin: 10px;
+  border-radius: 10px;
+}
+.m_b_box h1 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.m_b_box p {
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 20px;
+  color: rgb(179, 179, 179);
+  width: 250px;
+  text-align: center;
+}
+
+.m_b_box a {
+  color: gold;
+}
