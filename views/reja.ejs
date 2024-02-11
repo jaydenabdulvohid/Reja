@@ -14,6 +14,7 @@
   <body style="background-color: #b8bbd1">
     <div class="container">
       <h1 class="display-4 text-center py-1">REJA VA MAQSADLAR</h1>
+
       <div class="jumbotron p-3 shadow-sm">
         <form id="create-form" action="/create-item" method="POST">
           <div class="d-flex align-items-center">
@@ -26,10 +27,16 @@
               type="text"
               style="flex: 1"
             />
-            <button class="btn btn-primary" style="border-radius: 20px">Yangi Harid Qo'shish</button>
+            <button class="btn btn-primary" style="border-radius: 20px">
+              Yangi Reja Qoshish
+            </button>
           </div>
         </form>
       </div>
+
+      <button id="clean-all" class="btn btn-danger" style="border-radius: 20px">
+        Hamma Rejalarni ochirish
+      </button>
     </div>
   </body>
 </html>
