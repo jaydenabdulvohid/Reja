@@ -1,45 +1,34 @@
-                                       
-                                       
-                                       console.log("TASK-A YECHIIMI");
+// console.log("Task-B YECHIMI");
 
-                    
+// function countLetter(letter, word) {
+//   let count = 0;
+//   for (let i = 0; i < word.length; i++) {
+//     if (word[i] === letter) {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
 
- function countLetter(letter, word) {
-   let count = 0;                            
-    for (let i = 0; i < word.length; i++) {        
-         if (word[i] === letter) {                   
-            count++;                                
-       }
-    }
-    return count; //  natijasini qaytaramiz
- }
+// // Natijasini qaytirish
 
- console.log(countLetter("e", "engineer")); // => 3
+// console.log(countLetter("ad2a54Y79WET0SFGB9"));
 
-                      
-                  
-                        
+//                                        console.log("TASK-A YECHIIMI");
 
+//  function countLetter(letter, word) {
+//    let count = 0;
+//     for (let i = 0; i < word.length; i++) {
+//          if (word[i] === letter) {
+//             count++;
+//        }
+//     }
+//     return count; //  natijasini qaytaramiz
+//  }
 
+//  console.log(countLetter("e", "engineer")); // => 3
 
-                            
-
-
-
-
-
-
-
-
-
-
-
-                                       
-                                       
-                                       // Node js event LOOp va Calback Functionlar
-
-
-
+// Node js event LOOp va Calback Functionlar
 
 // console.log("Jack Ma maslahatlari");
 // const list = [
@@ -60,7 +49,7 @@
 // else if (a > 20 && a <= 30) callback(null, list[1]);
 // else if (a > 30 && a <= 40)  callback(null, list[2]);
 // else if (a > 40 && a <= 50) callback(null, list[3]);
-// else if (a > 50 && a <= 60) callback(null, list[4]); 
+// else if (a > 50 && a <= 60) callback(null, list[4]);
 
 // else {
 //     setInterval(function () {
@@ -72,19 +61,14 @@
 // console.log("Passed here 0");
 // maslahatBering(70, (err, data) => {
 //     if(err) console.log("EROR:", err);
-  
+
 //   else{
 //     console.log("Javob:", data);
 //   }
 // });
 // console.log("Paseed here 1");
 
-
-
-
-// // 
-  
-
+// //
 
 //                                                         //  asynchrnous Functionlarni qollash
 
@@ -112,7 +96,7 @@
 // // return new Promise((resolve, reject) => {
 // // //     setTimeout(() => {
 // // //   resolve(list[5]);
-// // //     }, 5000);   
+// // //     }, 5000);
 
 // //    setInterval(()=>{
 // //     resolve(list[5]);
@@ -129,7 +113,6 @@
 // // call via then, /catch
 
 // // console.log("Passed here 0");
-
 
 // // maslahatBering(65)
 // //    .then((data) => {
@@ -163,8 +146,4 @@
 // //     }
 // //     run();
 
-// // 
-
-                                  
-
-
+// //
