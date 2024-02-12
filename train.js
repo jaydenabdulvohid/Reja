@@ -1,5 +1,18 @@
 // console.log("Task-B YECHIMI");
 
+function countDigits(numbers) {
+  let digitCount = 0;
+  for (let char of numbers) {
+    if (!isNaN(char)) {
+      digitCount++;
+    }
+  }
+  return digitCount;
+}
+
+let inputNumbers = "ad254y79wet0sfgb9";
+console.log(countDigits(inputNumbers));
+
 //                                        console.log("TASK-A YECHIIMI");
 
 //  function countLetter(letter, word) {
