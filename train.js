@@ -1,19 +1,5 @@
 // console.log("Task-B YECHIMI");
 
-// function countLetter(letter, word) {
-//   let count = 0;
-//   for (let i = 0; i < word.length; i++) {
-//     if (word[i] === letter) {
-//       count++;
-//     }
-//   }
-//   return count;
-// }
-
-// // Natijasini qaytirish
-
-// console.log(countLetter("ad2a54Y79WET0SFGB9"));
-
 //                                        console.log("TASK-A YECHIIMI");
 
 //  function countLetter(letter, word) {
