@@ -38,6 +38,14 @@ app.post("/delete-item", (req, res) => {
   );
 });
 
+app.post("/delete-all", (req, res) => {
+  if (req.body.delete_all) {
+    db.collection("plans").deleteMany(function () {
+      res.json({ state: "hamma rejalar ochirildi" });
+    });
+  }
+});
+
 app.post("/edit-item", (req, res) => {
   const data = req.body;
   console.log(data);
@@ -48,14 +56,6 @@ app.post("/edit-item", (req, res) => {
       res.json({ state: "success" });
     }
   );
-});
-
-app.post("/delete-all", (req, res) => {
-  if (req.body.delete_all) {
-    db.collection("plans").deleteMany(function () {
-      res.json({ state: "hamma rejalar ochirildi" });
-    });
-  }
 });
 
 app.get("/", function (req, res) {
