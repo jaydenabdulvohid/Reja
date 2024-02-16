@@ -1,3 +1,5 @@
+//  D task yechimi
+
 // D-TASK yechimi
 console.log("D-TASK yechimi:");
 class Shop {
@@ -42,6 +44,44 @@ shop.qoldiq();
 shop.sotish("non", 3);
 shop.qabul("cola", 4);
 shop.qoldiq();
+
+// // Challenge
+
+// const fruits_list = [
+//   "pear",
+//   "banana",
+//   "watermelon",
+//   "cherry",
+//   "blueberry",
+//   "apelsin",
+//   "peach",
+//   "mongo",
+//   "xurmo",
+//   "olcha",
+//   "tarvuz",
+// ];
+
+// function findFruits(txt) {
+//   const foundFruits = [];
+//   const letters = Array.from(txt.toLowerCase().replace(/[^a-z]/g, "")); // Faqatgina a-z oralig'ida bo'lgan belgilar
+//   for (let fruit of fruits_list) {
+//     let found = true;
+//     for (let letter of letters) {
+//       if (!fruit.includes(letter)) {
+//         found = false;
+//         break;
+//       }
+//     }
+//     if (found) {
+//       foundFruits.push(fruit);
+//     }
+//   }
+//   return foundFruits;
+// }
+
+// const txt = "b";
+// const javob = findFruits(txt);
+// console.log("Javob:", javob);
 
 // console.log("Task-B YECHIMI");
 
