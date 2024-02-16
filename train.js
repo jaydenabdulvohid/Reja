@@ -1,51 +1,86 @@
-//  D task yechimi
+// //  D task yechimi                                         // D -- task
+function checkContent(str1, str2) {
+  // Birinchi va ikkinchi stringlarni harflar bilan ob'ektlarga ajratib olish
+  const charCount1 = {};
+  const charCount2 = {};
 
-// D-TASK yechimi
-console.log("D-TASK yechimi:");
-class Shop {
-  constructor(nonlar, lagmonlar, colalar) {
-    this.nonlar = nonlar;
-    this.lagmonlar = lagmonlar;
-    this.colalar = colalar;
+  // Birinchi stringdagi harflarni hisoblash
+  for (let char of str1) {
+    charCount1[char] = (charCount1[char] || 0) + 1;
   }
 
-  qoldiq() {
-    const now = new Date();
-    const hour = now.getHours();
-    const minute = now.getMinutes();
-    console.log(
-      `Hozir ${hour}:${minute}da ${this.nonlar}ta non, ${this.lagmonlar}ta lag'mon va ${this.colalar}ta cola mavjud!`
-    );
+  // Ikkinchi stringdagi harflarni hisoblash
+  for (let char of str2) {
+    charCount2[char] = (charCount2[char] || 0) + 1;
   }
 
-  sotish(mahsulot, soni) {
-    if (mahsulot === "non") {
-      this.nonlar -= soni;
-    } else if (mahsulot === "lagmon") {
-      this.lagmonlar -= soni;
-    } else if (mahsulot === "cola") {
-      this.colalar -= soni;
+  // Har ikkala stringdagi harflarning mavjudligini solishtirish
+  for (let char in charCount1) {
+    if (!(char in charCount2)) {
+      return false;
     }
   }
 
-  qabul(mahsulot, soni) {
-    if (mahsulot === "non") {
-      this.nonlar += soni;
-    } else if (mahsulot === "lagmon") {
-      this.lagmonlar += soni;
-    } else if (mahsulot === "cola") {
-      this.colalar += soni;
+  // Ikkinchi stringdagi harflarning mavjudligini solishtirish
+  for (let char in charCount2) {
+    if (!(char in charCount1)) {
+      return false;
     }
   }
+
+  // Har ikkala stringda bir xil harflar mavjud
+  return true;
 }
 
-const shop = new Shop(4, 5, 2);
-shop.qoldiq();
-shop.sotish("non", 3);
-shop.qabul("cola", 4);
-shop.qoldiq();
+// Test qilish
+console.log(checkContent("mitgroup", "gmtiprou")); // true
 
-// // Challenge
+// // D-TASK yechimi
+// console.log("D-TASK yechimi:");
+// class Shop {
+//   constructor(nonlar, lagmonlar, colalar) {
+//     this.nonlar = nonlar;
+//     this.lagmonlar = lagmonlar;
+//     this.colalar = colalar;
+//   }
+
+//   qoldiq() {
+//     const now = new Date();
+//     const hour = now.getHours();
+//     const minute = now.getMinutes();
+//     console.log(
+//       `Hozir ${hour}:${minute}da ${this.nonlar}ta non, ${this.lagmonlar}ta lag'mon va ${this.colalar}ta cola mavjud!`
+//     );
+//   }
+
+//   sotish(mahsulot, soni) {
+//     if (mahsulot === "non") {
+//       this.nonlar -= soni;
+//     } else if (mahsulot === "lagmon") {
+//       this.lagmonlar -= soni;
+//     } else if (mahsulot === "cola") {
+//       this.colalar -= soni;
+//     }
+//   }
+
+//   qabul(mahsulot, soni) {
+//     if (mahsulot === "non") {
+//       this.nonlar += soni;
+//     } else if (mahsulot === "lagmon") {
+//       this.lagmonlar += soni;
+//     } else if (mahsulot === "cola") {
+//       this.colalar += soni;
+//     }
+//   }
+// }
+
+// const shop = new Shop(4, 5, 2);
+// shop.qoldiq();
+// shop.sotish("non", 3);
+// shop.qabul("cola", 4);
+// shop.qoldiq();
+
+// Challenge
 
 // const fruits_list = [
 //   "pear",
@@ -79,7 +114,7 @@ shop.qoldiq();
 //   return foundFruits;
 // }
 
-// const txt = "b";
+// const txt = "";
 // const javob = findFruits(txt);
 // console.log("Javob:", javob);
 
