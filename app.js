@@ -53,7 +53,7 @@ app.post("/edit-item", (req, res) => {
     { _id: new mongodb.ObjectId(data.id) },
     { $set: { reja: data.new_input } },
     function (err, data) {
-      res.json({ status: "success" });
+      res.json({ state: "success" });
     }
   );
 });
