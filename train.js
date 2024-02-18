@@ -1,39 +1,48 @@
-// //  D task yechimi                                         // D -- task
-function checkContent(str1, str2) {
-  // Birinchi va ikkinchi stringlarni harflar bilan ob'ektlarga ajratib olish
-  const charCount1 = {};
-  const charCount2 = {};
+// E -task yechimi
 
-  // Birinchi stringdagi harflarni hisoblash
-  for (let char of str1) {
-    charCount1[char] = (charCount1[char] || 0) + 1;
-  }
-
-  // Ikkinchi stringdagi harflarni hisoblash
-  for (let char of str2) {
-    charCount2[char] = (charCount2[char] || 0) + 1;
-  }
-
-  // Har ikkala stringdagi harflarning mavjudligini solishtirish
-  for (let char in charCount1) {
-    if (!(char in charCount2)) {
-      return false;
-    }
-  }
-
-  // Ikkinchi stringdagi harflarning mavjudligini solishtirish
-  for (let char in charCount2) {
-    if (!(char in charCount1)) {
-      return false;
-    }
-  }
-
-  // Har ikkala stringda bir xil harflar mavjud
-  return true;
+function getReverse(str) {
+  return str.split("").reverse().join("");
 }
 
-// Test qilish
-console.log(checkContent("mitgroup", "gmtiprou")); // true
+// Misol:
+console.log(getReverse("hello")); // "olleh"
+// d --task
+// //  D task yechimi                                         // D -- task
+// function checkContent(str1, str2) {
+//   // Birinchi va ikkinchi stringlarni harflar bilan ob'ektlarga ajratib olish
+//   const charCount1 = {};
+//   const charCount2 = {};
+
+//   // Birinchi stringdagi harflarni hisoblash
+//   for (let char of str1) {
+//     charCount1[char] = (charCount1[char] || 0) + 1;
+//   }
+
+//   // Ikkinchi stringdagi harflarni hisoblash
+//   for (let char of str2) {
+//     charCount2[char] = (charCount2[char] || 0) + 1;
+//   }
+
+//   // Har ikkala stringdagi harflarning mavjudligini solishtirish
+//   for (let char in charCount1) {
+//     if (!(char in charCount2)) {
+//       return false;
+//     }
+//   }
+
+//   // Ikkinchi stringdagi harflarning mavjudligini solishtirish
+//   for (let char in charCount2) {
+//     if (!(char in charCount1)) {
+//       return false;
+//     }
+//   }
+
+//   // Har ikkala stringda bir xil harflar mavjud
+//   return true;
+// }
+
+// // Test qilish
+// console.log(checkContent("mitgroup", "gmtiprou")); // true
 
 // // D-TASK yechimi
 // console.log("D-TASK yechimi:");
