@@ -1,12 +1,29 @@
-// E -task yechimi
+// F - task yechimi                                             F -task
 
-function getReverse(str) {
-  return str.split("").reverse().join("");
+function findDoublers(str) {
+  let seen = {};
+  for (let char of str) {
+    if (seen[char]) {
+      return true;
+    } else {
+      seen[char] = true;
+    }
+  }
+  return false;
 }
 
 // Misol:
-console.log(getReverse("hello")); // "olleh"
-// d --task
+console.log(findDoublers("hello")); // true
+
+// E -task yechimi
+
+// function getReverse(str) {
+//   return str.split("").reverse().join("");
+// }
+
+// // Misol:
+// console.log(getReverse("hello")); // "olleh"
+// // d --task
 // //  D task yechimi                                         // D -- task
 // function checkContent(str1, str2) {
 //   // Birinchi va ikkinchi stringlarni harflar bilan ob'ektlarga ajratib olish
