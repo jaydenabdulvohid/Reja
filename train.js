@@ -1,19 +1,43 @@
-// F - task yechimi                                             F -task
+function getHighestIndex(arr) {
+  // highestIndex va highestValue o'zgaruvchilarini 0 va birinchi array elementiga tenglash
+  let highestIndex = 0;
+  let highestValue = arr[0];
 
-function findDoublers(str) {
-  let seen = {};
-  for (let char of str) {
-    if (seen[char]) {
-      return true;
-    } else {
-      seen[char] = true;
+  // Loop orqali arrayning qolgan barcha elementlarini tekshiramiz
+  for (let i = 1; i < arr.length; i++) {
+    // Agar hozirgi qiymat eng katta qiymatdan katta bo'lsa
+    if (arr[i] > highestValue) {
+      // highestValue va highestIndex o'zgaruvchilarini yangilaymiz
+      highestValue = arr[i];
+      highestIndex = i;
     }
   }
-  return false;
+
+  // Eng yuqori indexni qaytaramiz
+  return highestIndex;
 }
 
-// Misol:
-console.log(findDoublers("hello")); // true
+// Test qilish uchun funksiya
+let array = [5, 21, 12, 21, 8];
+let highestIndex = getHighestIndex(array);
+console.log("Highest Index:", highestIndex);
+
+// F - task yechimi                                             F -task
+
+// function findDoublers(str) {
+//   let seen = {};
+//   for (let char of str) {
+//     if (seen[char]) {
+//       return true;
+//     } else {
+//       seen[char] = true;
+//     }
+//   }
+//   return false;
+// }
+
+// // Misol:
+// console.log(findDoublers("hello")); // true
 
 // E -task yechimi
 
