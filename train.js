@@ -1,3 +1,5 @@
+// G - task yechimi                                         // G - task yechimi                                 // G - task yechimi
+
 function getHighestIndex(arr) {
   // highestIndex va highestValue o'zgaruvchilarini 0 va birinchi array elementiga tenglash
   let highestIndex = 0;
